@@ -17,7 +17,7 @@ class AIService:
         Args:
             api_key: Optional Groq API key; will use environment variable if not provided.
         """
-        self.api_key = api_key or os.environ.get("GROQ_API_KEY") or "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"
+        self.api_key = api_key or os.environ.get("GROQ_API_KEY") or os.getenv("GROQ_API_KEY")
         if not self.api_key:
             raise ValueError("Groq API key must be provided via parameter or environment variable.")
         self.client = Groq(api_key=self.api_key)  # Initialize the Groq client
