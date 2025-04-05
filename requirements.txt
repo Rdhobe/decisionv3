@@ -1,0 +1,6 @@
+pygame==2.5.2
+pymongo==4.6.1
+openai==1.13.3
+SpeechRecognition==3.10.0
+pyaudio==0.2.13
+python-dotenv==1.0.0 
